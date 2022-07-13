@@ -89,13 +89,17 @@
       <div class="text-9xl mt-16 dark:text-white">
         <h1>Yoimar Urbina</h1>
       </div>
+      <div>
+        <h1>I am the parent view</h1>
+        <NuxtPage :page-key="someKey" />
+      </div>
     </div>
   </div>
 </template>
 <script setup>
-const setColorTheme = (newTheme) => {
-  const mode = useColorMode()
-  mode.value = newTheme
-  mode.preference = newTheme
-};
+// const setColorTheme = (newTheme) => {
+//   const mode = useColorMode()
+//   mode.value = newTheme
+//   mode.preference = newTheme
+// };
 </script>
